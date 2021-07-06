@@ -1,0 +1,25 @@
+algorithme tri par insertion
+var
+t1: array of_integer[7];
+i: integer;
+j: integer;
+k: integer;
+c: integer;
+l: integer;
+BEGIN
+for i from 0 to 6 do
+read(t1[i]);
+end_for
+for j from 2 to 7 do
+c:= t1[j];
+l:= j;
+while (t1[l-1]>c) do
+t1[l]:= t1[l-1];
+l:= l-1;
+end_while
+t1[l]:= c;
+end_for
+for k from 0 to 6 do
+write(t1[k]);
+end_for
+END
